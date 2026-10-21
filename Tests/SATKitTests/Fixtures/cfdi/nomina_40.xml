@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:nomina12="http://www.sat.gob.mx/nomina12" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="4.0" Serie="N" Folio="2026-06" Fecha="2026-03-31T18:00:00" SubTotal="15000.00" Descuento="2500.00" Moneda="MXN" Total="12500.00" TipoDeComprobante="N" Exportacion="01" MetodoPago="PUE" LugarExpedicion="06600">
+  <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="CACX7605101P8" Nombre="XOCHILT CASAS CHAVEZ" DomicilioFiscalReceptor="36257" RegimenFiscalReceptor="605" UsoCFDI="CN01"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="84111505" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago de nómina" ValorUnitario="15000.00" Importe="15000.00" Descuento="2500.00" ObjetoImp="01"/>
+  </cfdi:Conceptos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="c0ffee00-1234-4abc-9def-00112233aabb" FechaTimbrado="2026-03-31T18:02:00" RfcProvCertif="SAT970701NN3" SelloCFD="FAKE" NoCertificadoSAT="30001000000500003456" SelloSAT="FAKE"/>
+    <nomina12:Nomina Version="1.2" TipoNomina="O" FechaPago="2026-03-31" FechaInicialPago="2026-03-16" FechaFinalPago="2026-03-31" NumDiasPagados="16" TotalPercepciones="15000.00" TotalDeducciones="2500.00">
+      <nomina12:Receptor Curp="CACX760510MGTSHC04" TipoContrato="01" TipoRegimen="02" NumEmpleado="17" PeriodicidadPago="04" ClaveEntFed="CMX"/>
+      <nomina12:Percepciones TotalSueldos="15000.00" TotalGravado="15000.00" TotalExento="0.00">
+        <nomina12:Percepcion TipoPercepcion="001" Clave="001" Concepto="Sueldo" ImporteGravado="15000.00" ImporteExento="0.00"/>
+      </nomina12:Percepciones>
+      <nomina12:Deducciones TotalOtrasDeducciones="300.00" TotalImpuestosRetenidos="2200.00">
+        <nomina12:Deduccion TipoDeduccion="002" Clave="002" Concepto="ISR" Importe="2200.00"/>
+        <nomina12:Deduccion TipoDeduccion="001" Clave="001" Concepto="IMSS" Importe="300.00"/>
+      </nomina12:Deducciones>
+    </nomina12:Nomina>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

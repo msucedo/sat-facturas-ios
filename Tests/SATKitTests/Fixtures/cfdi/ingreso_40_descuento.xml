@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="4.0" Serie="F" Folio="2045" Fecha="2026-01-31T23:15:40" FormaPago="04" SubTotal="1250.00" Descuento="100.00" Moneda="MXN" Total="1334.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000">
+  <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="URE180429TM6" Nombre="UNIVERSIDAD ROBOTICA ESPAÑOLA" DomicilioFiscalReceptor="65000" RegimenFiscalReceptor="601" UsoCFDI="G01"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="44121618" Cantidad="2" ClaveUnidad="H87" Descripcion="Tijeras de oficina &quot;Pro&quot;, paquete" ValorUnitario="500.00" Importe="1000.00" Descuento="100.00" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="900.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="144.00"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="44121701" Cantidad="1.5" ClaveUnidad="H87" Descripcion="Bolígrafos azules (caja)" ValorUnitario="166.666667" Importe="250.00" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="250.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="40.00"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="184.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="1150.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="184.00"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="A1B2C3D4-E5F6-4789-9ABC-DEF012345678" FechaTimbrado="2026-01-31T23:16:02" RfcProvCertif="SAT970701NN3" SelloCFD="FAKE" NoCertificadoSAT="30001000000500003456" SelloSAT="FAKE"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

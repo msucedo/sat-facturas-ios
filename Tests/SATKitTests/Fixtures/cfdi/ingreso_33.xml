@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Folio="887" Fecha="2021-07-01T09:05:00" Sello="FAKE" FormaPago="99" NoCertificado="30001000000400002434" Certificado="MIIF" SubTotal="5000.00" Moneda="MXN" Total="5800.00" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="45079">
+  <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE SA DE CV" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" UsoCFDI="P01"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="86121500" Cantidad="1" ClaveUnidad="E48" Descripcion="Colegiatura julio" ValorUnitario="5000.00" Importe="5000.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="800.00"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="800.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="800.00"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="1.1" UUID="0f9e8d7c-6b5a-4493-8271-605f4e3d2c1b" FechaTimbrado="2021-07-01T09:06:30" RfcProvCertif="SAT970701NN3" SelloCFD="FAKE" NoCertificadoSAT="30001000000400002495" SelloSAT="FAKE"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

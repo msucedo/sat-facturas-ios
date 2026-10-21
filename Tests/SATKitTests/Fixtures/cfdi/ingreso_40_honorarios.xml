@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="101" Fecha="2026-03-15T10:30:00" FormaPago="03" NoCertificado="30001000000500003416" Certificado="MIIF" Sello="FAKE" SubTotal="10000.00" Moneda="MXN" Total="9533.33" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="06600">
+  <cfdi:Emisor Rfc="CACX7605101P8" Nombre="XOCHILT CASAS CHAVEZ" RegimenFiscal="612"/>
+  <cfdi:Receptor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" DomicilioFiscalReceptor="42501" RegimenFiscalReceptor="601" UsoCFDI="G03"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="80111600" Cantidad="1" ClaveUnidad="E48" Unidad="Servicio" Descripcion="Honorarios por asesoría contable, marzo 2026" ValorUnitario="10000.00" Importe="10000.00" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/>
+        </cfdi:Traslados>
+        <cfdi:Retenciones>
+          <cfdi:Retencion Base="10000.00" Impuesto="001" TipoFactor="Tasa" TasaOCuota="0.100000" Importe="1000.00"/>
+          <cfdi:Retencion Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.106667" Importe="1066.67"/>
+        </cfdi:Retenciones>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosRetenidos="2066.67" TotalImpuestosTrasladados="1600.00">
+    <cfdi:Retenciones>
+      <cfdi:Retencion Impuesto="001" Importe="1000.00"/>
+      <cfdi:Retencion Impuesto="002" Importe="1066.67"/>
+    </cfdi:Retenciones>
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="10000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1600.00"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="1.1" UUID="3f2a1b4c-5d6e-4f70-8a9b-0c1d2e3f4a5b" FechaTimbrado="2026-03-15T10:31:12" RfcProvCertif="SAT970701NN3" SelloCFD="FAKE" NoCertificadoSAT="30001000000500003456" SelloSAT="FAKE"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

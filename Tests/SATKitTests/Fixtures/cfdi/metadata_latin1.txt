@@ -1,0 +1,2 @@
+Uuid~RfcEmisor~NombreEmisor~RfcReceptor~NombreReceptor~RfcPac~FechaEmision~FechaCertificacionSat~Monto~EfectoComprobante~Estatus~FechaCancelacion
+11111111-2222-4333-8444-555555555555~PEJJ800101AB1~JOSÉ PEÑA MUÑOZ~EKU9003173C9~ESCUELA KEMPER URGATE~SAT970701NN3~2025-12-24 07:45:10~2025-12-24 07:46:00~1160.50~E~1~

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:pago20="http://www.sat.gob.mx/Pagos20" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="4.0" Serie="P" Folio="12" Fecha="2026-02-10T12:00:00" SubTotal="0" Moneda="XXX" Total="0" TipoDeComprobante="P" Exportacion="01" LugarExpedicion="06600">
+  <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="URE180429TM6" Nombre="UNIVERSIDAD ROBOTICA ESPAÑOLA" DomicilioFiscalReceptor="65000" RegimenFiscalReceptor="601" UsoCFDI="CP01"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago" ValorUnitario="0" Importe="0" ObjetoImp="01"/>
+  </cfdi:Conceptos>
+  <cfdi:Complemento>
+    <pago20:Pagos Version="2.0">
+      <pago20:Totales TotalTrasladosBaseIVA16="1000.00" TotalTrasladosImpuestoIVA16="160.00" MontoTotalPagos="1160.00"/>
+      <pago20:Pago FechaPago="2026-02-09T12:00:00" FormaDePagoP="03" MonedaP="MXN" TipoCambioP="1" Monto="1160.00">
+        <pago20:DoctoRelacionado IdDocumento="0F9E8D7C-6B5A-4493-8271-605F4E3D2C1B" MonedaDR="MXN" EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="1160.00" ImpPagado="1160.00" ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+          <pago20:ImpuestosDR>
+            <pago20:TrasladosDR>
+              <pago20:TrasladoDR BaseDR="1000.00" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="160.00"/>
+            </pago20:TrasladosDR>
+          </pago20:ImpuestosDR>
+        </pago20:DoctoRelacionado>
+        <pago20:ImpuestosP>
+          <pago20:TrasladosP>
+            <pago20:TrasladoP BaseP="1000.00" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.160000" ImporteP="160.00"/>
+          </pago20:TrasladosP>
+        </pago20:ImpuestosP>
+      </pago20:Pago>
+    </pago20:Pagos>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="5e6f7a8b-9c0d-4e1f-a2b3-c4d5e6f7a8b9" FechaTimbrado="2026-02-10T12:01:00" RfcProvCertif="SAT970701NN3" SelloCFD="FAKE" NoCertificadoSAT="30001000000500003456" SelloSAT="FAKE"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

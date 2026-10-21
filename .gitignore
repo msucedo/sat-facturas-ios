@@ -1,0 +1,14 @@
+.build/
+DerivedData/
+xcuserdata/
+.DS_Store
+# Apps de referencia para leer con rea: nunca al repo.
+re/
+# Tu e.firma real y lo que baje el SAT.
+secrets/
+descargas/
+*.token.json
+
+# Builds paralelos y diagnóstico de satctl.
+.build-*/
+debug/
